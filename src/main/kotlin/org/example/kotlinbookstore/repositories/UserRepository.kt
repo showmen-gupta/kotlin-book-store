@@ -1,4 +1,9 @@
-package org.example.kotlinbookstore.repository
+package org.example.kotlinbookstore.repositories
 
-class UserRepository {
+import org.example.kotlinbookstore.models.user.User
+import org.springframework.data.repository.CrudRepository
+import org.springframework.stereotype.Repository
+
+@Repository
+interface UserRepository : CrudRepository<User, Long> {
 }
