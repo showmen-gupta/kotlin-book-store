@@ -1,0 +1,4 @@
+ALTER TABLE app_user
+    ADD COLUMN created_at TIMESTAMP NULL;
+ALTER TABLE app_user
+    ADD COLUMN updated_at TIMESTAMP NULL;
